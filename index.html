@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>some sneakers</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="header">
+      " the store "
+    </div>
+    <div id="bar">
+      <div class="cart" id="myCart"><span id="cartText"></span>
+        <div class="dropdownmenu">
+          <span id="emptymessage"><font color="red">Your cart is empty!</font> 😢<br><font size="3px">Add some shoes to get started.</font></span>
+        </div>
+      </div>
+    </div>
+    <div id="main">
+      <div id="pagename">
+        some sneakers
+      </div>
+      <div class="image">
+        <img src="images\sacais.png" alt="sacais" height=125px onclick="addSneaker('sacais');">
+      </div>
+      <div class="description" id="sacais">
+        sacai x nike blazer high<br>
+        <font color="gray">in stock april 19; pre-order now<br>
+        $140</font>
+      </div>
+      <div class="divider"></div>
+      <div class="image">
+        <img src="images\lebrons.png" alt="lebrons" height=125px onclick="addSneaker('lebrons');">
+      </div>
+      <div class="description" id="lebrons">
+        nike lebron 16 "safari"<br>
+        <font color="gray">in stock march 2; pre-order now<br>
+        $175</font>
+      </div>
+      <div class="divider"></div>
+      <div class="image">
+        <img src="images\janoski.png" alt="janoski 2" height=125px onclick="addSneaker('janoski');">
+      </div>
+      <div class="description" id="janoski">
+        nike sb air max janoski 2<br>
+        <font color="gray">in stock now<br>
+        $110</font>
+      </div>
+      <div class="divider"></div>
+      <div class="image">
+        <img src="images\jordans.png" alt="air jordans" height=125px onclick="addSneaker('jordans');">
+      </div>
+      <div class="description" id="jordans">
+        air jordan 1 "phantom"<br>
+        <font color="gray">in stock march 16; pre-order now<br>
+        $160</font>
+      </div>
+    </div>
+    <footer>
+      Sneaker concept store for ET712 Assignment 3: Cash Register. Photos from Sole Collector.<br><br>
+      <div id="copyright">
+        &copy; 2019<script>new Date().getFullYear()>2019&&document.write("-"+new Date().getFullYear());</script>, HOV4.
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

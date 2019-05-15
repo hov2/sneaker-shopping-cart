@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Nunito|Roboto|Roboto+Condensed');
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #efefef;
+  font-weight: normal;
+  height: 100%;
+  background-image: url("images/purpleasphalt.jpg");
+  background-size: 700px;
+  background-repeat: repeat;
+}
+
+.header {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  box-sizing: border-box; /*prevents padding from increasing element width*/
+  padding: 40px;
+  top: 0;
+}
+
+#bar {
+  display: flex;
+  justify-content: flex-end;
+  background-image: url("images/bars3.jpg");
+  background-repeat: repeat-x;
+  background-size: 100px 40px;
+  margin: auto;
+  width: 80%;
+  /*border: 1px solid black;*/
+  box-sizing: border-box;
+}
+
+.cart {
+  background: yellow;
+  font-size: 20px;
+  padding: 5px 20px;
+  position: relative;
+  display: inline-block;
+  text-align: right;
+  width: 200px;
+}
+
+/* The sticky class is added to the cart with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.dropdownmenu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  z-index: 1;
+  background-color: yellow;
+  padding: 0px 10px;
+  line-height: 200%;
+  margin-right: 50%;
+  font-size: 19px;
+}
+
+/* Show dropdown menu on hover */
+.cart:hover .dropdownmenu {
+  display: block;
+}
+
+#main {
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+#pagename {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+  font-size: 14px;
+  width: 80%;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  padding: 0px 30px;
+  box-sizing: border-box;
+  width: 300px;
+  align-self: center;
+}
+
+.divider {
+  padding: 20px;
+  box-sizing: border-box;
+  width: 80%;
+}
+
+.image {
+  position: relative;
+}
+
+.image:after {
+    content: "add to cart";
+    color: #fff;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%; height:125px;
+    top:0; left:0;
+    background:rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    pointer-events: none;
+}
+
+.image:hover:after {
+    opacity: 1;
+}
+
+footer {
+  font-family: monospace;
+  font-weight: 300;
+  color: white;
+  height: 55px;
+  box-sizing: border-box;
+  padding: 5px;
+  background-color: #0000ff;
+  width: 80%;
+  margin: auto;
+}
